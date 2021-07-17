@@ -1,17 +1,14 @@
 import React from 'react'
 import Footer from '../components/footer'
-import Nav from '../components/Nav'
+import Layout from '../components/layout'
+import Nav from '../components/nav'
 
 const WorkPage = () => {
     return (
-        <div>
-            <Nav/>
-            
+        <Layout>
             <h1>Works</h1>
             <p>STUFF STUFF STUFF;kd</p>
-
-            <Footer/>
-        </div>
+        </Layout>
     )
 }
 

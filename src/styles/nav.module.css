@@ -16,5 +16,11 @@
 }
 
 .link {
-    color: $secondary-c;
+    display: inline-block;
+    text-decoration: none;
+    transition: 100ms;
+    &:hover {
+        color: $primary-c;
+        transform: scale(1.03);
+    }
 }

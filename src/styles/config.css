@@ -4,3 +4,8 @@
 $text-c:      #21243D;
 $primary-c:   #FF6464;
 $secondary-c: #00A8CC;
+
+* {
+   font-family: 'Ubuntu', sans-serif;
+   color: $text-c;
+}

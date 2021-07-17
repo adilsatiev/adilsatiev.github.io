@@ -1,17 +1,16 @@
 import React from 'react'
 import Footer from '../components/footer'
-import Nav from '../components/Nav'
+import Layout from '../components/layout'
+import Nav from '../components/nav'
 
 const ContactPage = () => {
     return (
-        <div>
-            <Nav/>
-
-            <h1>Contact</h1>
-            <p>@adilsatiev;kd</p>
-            
-            <Footer/>
-        </div>
+        <Layout>
+            <div>
+                <h1>Contact</h1>
+                <p>@adilsatiev;kd</p>
+            </div>
+        </Layout>
     )
 }
 
