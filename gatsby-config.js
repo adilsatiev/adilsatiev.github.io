@@ -1,5 +1,14 @@
-
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require('postcss-mixins'),
+          require('precss'),
+          require('autoprefixer'),
+        ],
+      },
+    },
+  ],
 }
