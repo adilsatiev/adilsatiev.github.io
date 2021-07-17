@@ -5,7 +5,6 @@ const WorkPage = () => {
     return (
         <Layout>
             <h1>Works</h1>
-            <p>STUFF STUFF STUFF;kd</p>
         </Layout>
     )
 }

@@ -4,7 +4,6 @@ const WorkDetailPage = () => {
     return (
         <div>
             <h1>Works</h1>
-            <p>STUFF STUFF STUFF;kd</p>
         </div>
     )
 }

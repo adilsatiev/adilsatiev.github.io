@@ -8,9 +8,9 @@ const IndexPage = () => {
   return (
       <Layout>
 
-        <div className={iS.wrapper}>
-          <div className={iS.container}>
-              <h1 className={iS.header}>Hi, I am Adil, Creative Technologist</h1>
+        <div className={iS.main}>
+          <div className={iS.box}>
+              <h1 className={iS.header}>Hi, I am Adil, Web Developer</h1>
               <p className={iS.text}>
                 Amet minim mollit non deserunt ullamco est sit aliqua
                 dolor do amet sint. Velit officia consequat duis enim velit mollit.
@@ -24,6 +24,19 @@ const IndexPage = () => {
           </div>
         </div>
         
+        <div className={iS.recent}>
+          <h2 className={iS.h2}>
+            Recent Posts
+          </h2>
+          <div className={iS.blogbox}>
+            <div className={iS.blogpost}>
+
+            </div>
+            <div className={iS.blogpost}>
+
+            </div>
+          </div>
+        </div>
       </Layout>
   )
 }
