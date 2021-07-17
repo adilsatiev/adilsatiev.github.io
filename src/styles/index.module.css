@@ -2,12 +2,6 @@
 @import 'reset.css';
 @import 'config.css';
 
-
-.main {
-    display: flex;
-    flex-direction: column;
-}
-
 .wrapper {
     display: flex;
 }

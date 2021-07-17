@@ -9,3 +9,7 @@ $secondary-c: #00A8CC;
    font-family: 'Ubuntu', sans-serif;
    color: $text-c;
 }
+
+html, body {
+   height: 100%;
+}

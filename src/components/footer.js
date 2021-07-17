@@ -7,30 +7,32 @@ import footerGit from '../img/footer-git.svg'
 
 const Footer = () => {
     return (
-        <footer>
-            <ul className={fS.List}>
+        <footer className={fS.footer}>
+
+            <ul className={fS.list}>
                 <li className={fS.item}>
                     <a href="https://vk.com/adilsatiev">
-                        <img src={footerVk} alt='icon'></img>
+                        <img className={fS.img} src={footerVk} alt='icon'></img>
                     </a>
                 </li>
                 <li className={fS.item}>
                     <a href="https://instagram.com/adilsatiev">
-                        <img src={footerInst} alt='icon'></img>
+                        <img className={fS.img} src={footerInst} alt='icon'></img>
                     </a>
                     </li>
                 <li className={fS.item}>
                     <a href="https://tg.com/ad1ls">
-                        <img src={footerTg} alt='icon'></img>
+                        <img className={fS.img} src={footerTg} alt='icon'></img>
                     </a>
                 </li>
                 <li className={fS.item}>
                     <a href="https://github.com/adilsatiev">
-                        <img src={footerGit} alt='icon'></img>
+                        <img className={fS.img} src={footerGit} alt='icon'></img>
                     </a>
                 </li>
             </ul>
-            <p>Created by Adil Satiev, C 2021</p>
+
+            <span className={fS.copy}>Copyright ©2021 All rights reserved </span>
         </footer>
     )
 }

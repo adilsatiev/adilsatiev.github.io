@@ -9,7 +9,7 @@ const Layout = (props) => {
             <Nav/>
             <div className={lS.content}>
                 {props.children}
-            </div>
+             </div>
             <Footer/>
         </div>
     )

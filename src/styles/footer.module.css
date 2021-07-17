@@ -1,7 +1,29 @@
+@import 'config.css';
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    align-self: center;
+}
+
 .list {
     display: flex;
+    margin-bottom: 15px;
 }
 
 .item {
-    margin-left: 1rem;
+    margin: 0 10px;
+}
+
+.img {
+    width: 30px;
+    height: 30px;
+}
+
+.copy {
+    font-size: 12px;
 }

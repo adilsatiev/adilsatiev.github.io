@@ -1,14 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import Footer from '../components/footer'
-import Nav from '../components/nav'
+//import { Link } from 'gatsby'
 import introPhoto from '../img/intro-photo.png'
 import * as iS from '../styles/index.module.css'
 import Layout from '../components/layout'
 
 const IndexPage = () => {
   return (
-    <div className={iS.main}>
       <Layout>
 
         <div className={iS.wrapper}>
@@ -28,7 +25,6 @@ const IndexPage = () => {
         </div>
         
       </Layout>
-    </div>
   )
 }
 
