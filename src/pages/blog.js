@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from '../components/footer'
-import Header from '../components/header'
+import Nav from '../components/nav'
 
 const BlogPage = () => {
     return (
         <div>
-            <Header/>
+            <Nav/>
 
             <h1>Blog</h1>
             <p>HDsnkpdsnjkdkfdf;kd</p>

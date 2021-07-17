@@ -1,18 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import * as hS from '../styles/header.module.css'
+import * as hS from '../styles/nav.module.css'
 
-const Header = () => {
+const Nav = () => {
     return (
-        <header>
+        <nav className={hS.nav}>
             <ul className={hS.list}>
                 <li className={hS.item}><Link className={hS.link} to='/'>Home</Link></li>
                 <li className={hS.item}><Link className={hS.link} to='/work'>Works</Link></li>
                 <li className={hS.item}><Link className={hS.link} to='/blog'>Blog</Link></li>
                 <li className={hS.item}><Link className={hS.link} to='/contact'>Contact</Link></li>
             </ul>
-        </header>
+        </nav>
     )
 }
 
-export default Header
+export default Nav

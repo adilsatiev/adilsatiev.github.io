@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from '../components/footer'
-import Header from '../components/header'
+import Nav from '../components/Nav'
 
 const ContactPage = () => {
     return (
         <div>
-            <Header/>
+            <Nav/>
 
             <h1>Contact</h1>
             <p>@adilsatiev;kd</p>

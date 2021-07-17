@@ -1,11 +1,11 @@
 import React from 'react'
 import Footer from '../components/footer'
-import Header from '../components/header'
+import Nav from '../components/Nav'
 
 const WorkPage = () => {
     return (
         <div>
-            <Header/>
+            <Nav/>
             
             <h1>Works</h1>
             <p>STUFF STUFF STUFF;kd</p>
