@@ -5,9 +5,9 @@
 .main {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
-    max-width: 970px;
+    max-width: 950px;
     margin: 0 auto;
+    
     margin-bottom: 100px;
     .box {
         display: flex;
@@ -30,7 +30,7 @@
         border: 0;
         font-size: 20px;
         color: white;
-        padding: 9px 20px;
+        padding: 9px 15px;
         width: 208px;
         height: 47px;
         border-radius: 5px;
@@ -47,8 +47,10 @@
 }
 
 .recent {
-    padding: 30px 20px;
+    padding: 30px 0;
     background: #EDF7FA;
+    
+    margin-bottom: 100px;
     .wrapper {
         max-width: 950px;
         margin: 0 auto;
@@ -80,5 +82,17 @@
         display: flex;
         font-size: 18px;
         margin-bottom: 10px;
+    }
+    .data {
+        margin-right: 40px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 20px;
+            border: 1px solid $text-c;
+            right: -20px;
+            top: 3px;
+        }
     }
 }

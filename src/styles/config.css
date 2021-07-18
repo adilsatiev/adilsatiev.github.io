@@ -1,15 +1,26 @@
 /* Config with global view
    include variables & mixins & etc */
 
-$text-c:      #21243D;
-$primary-c:   #FF6464;
-$secondary-c: #00A8CC;
+$text-c: #21243d;
+$primary-c: #ff6464;
+$secondary-c: #00a8cc;
 
 * {
-   font-family: 'Ubuntu', sans-serif;
+   font-family: "Ubuntu", sans-serif;
    color: $text-c;
 }
 
-html, body {
+html,
+body {
    height: 100%;
+   overflow: auto;
+}
+
+html {
+   overflow: scroll;
+   overflow-x: hidden;
+}
+::-webkit-scrollbar {
+   width: 0px; /* remove scrollbar space */
+   background: transparent; /* optional: just make scrollbar invisible */
 }
