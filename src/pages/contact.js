@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
-
+import * as cS from '../styles/contact.module.css'
 
 
 const ContactPage = () => {
     return (
         <Layout>
-            <div>
-                <h1>Contact</h1>
+            <div className={cS.container}>
+                <h1 className={cS.header}>Contact</h1>
             </div>
         </Layout>
     )

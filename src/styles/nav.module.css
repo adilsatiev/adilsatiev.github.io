@@ -1,4 +1,4 @@
-@import 'config.css';
+@import "config.css";
 
 .nav {
     align-self: flex-end;
@@ -25,4 +25,8 @@
         color: $primary-c;
         transform: scale(1.03);
     }
+}
+
+.active {
+    color: $primary-c;
 }

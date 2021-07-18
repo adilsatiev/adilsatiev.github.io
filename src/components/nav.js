@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import * as hS from '../styles/nav.module.css'
+import * as nS from '../styles/nav.module.css'
 
 const Nav = () => {
     return (
-        <nav className={hS.nav}>
-            <ul className={hS.list}>
-                <li className={hS.item}><Link className={hS.link} to='/'>Home</Link></li>
-                <li className={hS.item}><Link className={hS.link} to='/project'>Projects</Link></li>
-                <li className={hS.item}><Link className={hS.link} to='/blog'>Blog</Link></li>
-                <li className={hS.item}><Link className={hS.link} to='/contact'>Contact</Link></li>
+        <nav className={nS.nav}>
+            <ul className={nS.list}>
+                <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/'>Home</Link></li>
+                <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/project'>Projects</Link></li>
+                <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/blog'>Blog</Link></li>
+                <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/contact'>Contact</Link></li>
             </ul>
         </nav>
     )
