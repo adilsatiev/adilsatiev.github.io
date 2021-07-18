@@ -1,21 +1,19 @@
-@import url('config.css');
+@import 'config.css';
 
 .recent {
-    padding: 30px 0;
+    padding: 30px 20px;
     background: #EDF7FA;
     
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .wrapper {
     max-width: 950px;
     margin: 0 auto;
-
 }
 
 .h2 {
     font-size: 22px;
-    font-weight: 700;
     font-weight: normal;
     margin-bottom: 20px;
 }
@@ -23,6 +21,7 @@
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .post {
@@ -37,6 +36,10 @@
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 15px;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .key {

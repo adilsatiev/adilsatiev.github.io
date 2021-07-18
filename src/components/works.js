@@ -3,6 +3,7 @@ import * as wS from '../styles/works.module.css'
 import workImgOne from '../img/work-img1.png'
 import workImgTwo from '../img/work-img2.png'
 import workImgThree from '../img/work-img3.png'
+import { Link } from 'gatsby'
 
 const Works = () => {
     return (
@@ -13,11 +14,15 @@ const Works = () => {
             <ul className={wS.list}>
 
                 <li className={wS.item}>
-                    <div><img src={workImgOne} alt='Work Image'></img></div>
-                    <div>
-                        <h3 className={wS.title}>Designing Dashboards</h3>
+                    <div><img src={workImgOne} alt='Work'></img></div>
+                    <div className={wS.wrapper}>
+                        <h3 className={wS.title}>
+
+                            <Link className={wS.link} to='/'>Designing Dashboards</Link>
+
+                        </h3>
                         <div className={wS.key}>
-                            <span className={wS.data}>2021</span>
+                            <span className={wS.data}>2021 Mar</span>
                             <span className={wS.topic}>Dashboard</span>
                         </div>
                         <p className={wS.text}>
@@ -28,13 +33,17 @@ const Works = () => {
                         </p>
                     </div>
                 </li>
-                
+
                 <li className={wS.item}>
-                    <div><img src={workImgTwo} alt='Work Image'></img></div>
-                    <div>
-                        <h3 className={wS.title}>Vibrant Portraits of 2020</h3>
+                    <div><img src={workImgTwo} alt='Work'></img></div>
+                    <div className={wS.wrapper}>
+                        <h3 className={wS.title}>
+
+                            <Link className={wS.link} to='/'>Vibrant Portraits of 2020</Link>
+
+                        </h3>
                         <div className={wS.key}>
-                            <span className={wS.data}>2021</span>
+                            <span className={wS.data}>2021 May</span>
                             <span className={wS.topic}>Illustration</span>
                         </div>
                         <p className={wS.text}>
@@ -47,11 +56,15 @@ const Works = () => {
                 </li>
 
                 <li className={wS.item}>
-                    <div><img src={workImgThree} alt='Work Image'></img></div>
-                    <div>
-                        <h3 className={wS.title}>36 Days of Malayalam type</h3>
+                    <div><img src={workImgThree} alt='Work'></img></div>
+                    <div className={wS.wrapper}>
+                        <h3 className={wS.title}>
+
+                            <Link className={wS.link} to='/'>36 Days of Malayalam type</Link>
+
+                        </h3>
                         <div className={wS.key}>
-                            <span className={wS.data}>2021</span>
+                            <span className={wS.data}>2021 Jan</span>
                             <span className={wS.topic}>Typography</span>
                         </div>
                         <p className={wS.text}>

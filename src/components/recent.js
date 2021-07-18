@@ -1,5 +1,6 @@
 import React from 'react'
-import * as rS from '../styles/recent.styles.css'
+import { Link } from 'gatsby'
+import * as rS from '../styles/recent.module.css'
 
 const Recent = () => {
     return (
@@ -11,7 +12,11 @@ const Recent = () => {
                 <div className={rS.container}>
 
                     <div className={rS.post}>
-                        <h3 className={rS.title}>Making a desing system from scratch</h3>
+                        <h3 className={rS.title}>
+
+                            <Link className={rS.link} to='/'>Making a desing system from scratch</Link>
+
+                        </h3>
                         <div className={rS.key}>
                             <span className={rS.data}>12 Jul 2021</span>
                             <span className={rS.topic}>Design, Pattern</span>
@@ -24,7 +29,11 @@ const Recent = () => {
                     </div>
 
                     <div className={rS.post}>
-                        <h3 className={rS.title}>Creating pixel perfect icons in Figma</h3>
+                        <h3 className={rS.title}>
+
+                            <Link className={rS.link} to='/'>Creating pixel perfect icons in Figma</Link>
+
+                        </h3>
                         <div className={rS.key}>
                             <span className={rS.data}>05 May 2021</span>
                             <span className={rS.topic}>Figma, Design</span>

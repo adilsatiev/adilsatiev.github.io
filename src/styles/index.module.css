@@ -5,9 +5,10 @@
 .main {
     display: flex;
     justify-content: space-between;
-    max-width: 950px;
+    max-width: 970px;
     margin: 0 auto;
-    
+    padding: 0 20px;
+
     margin-bottom: 100px;
     .box {
         display: flex;
@@ -17,7 +18,7 @@
     
     .header {
         font-size: 44px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     
     .text {
@@ -26,19 +27,65 @@
     }
     
     .button {
+        position: relative;
         background: $primary-c;
         border: 0;
         font-size: 20px;
-        color: white;
+        color: $white-c;
         padding: 9px 15px;
-        width: 208px;
-        height: 47px;
+        width: 210px;
+        height: 45px;
         border-radius: 5px;
+        overflow: hidden;
         transition: 100ms;
+        &:focus{
+            outline: 0;
+        }
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            background: rgba(255,255,255,0.5);
+            width: 60px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: .5;
+            filter: blur(30px);
+            transform: translateX(-100px)  skewX(-15deg);
+        }
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            background: rgba(255,255,255,0.2);
+            width: 30px;
+            height: 100%;
+            left: 30px;
+            top: 0;
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100px) skewX(-15deg);
+        }
+        &:hover{
+            background: $text-c;
+            cursor: pointer;
+            &:before{
+            transform: translateX(300px)  skewX(-15deg);  
+            opacity: 0.6;
+            transition: .7s;
+            }
+            &:after{
+            transform: translateX(300px) skewX(-15deg);  
+            opacity: 1;
+            transition: .7s;
+            }
+        }
         &:hover {
             transform: scale(1.02);
         }
     }
+    
     
     .photo {
         margin-top: 30px;

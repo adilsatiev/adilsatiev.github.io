@@ -35,9 +35,10 @@ const IndexPage = () => {
           </h1>
 
           <p className={iS.text}>
-            Amet minim mollit non deserunt ullamco est sit aliqua
-            dolor do amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet.
+            I'm Adil Satiev. From Kazan, Russia. I'm web developer. 
+            On this site you could read my blog or check my works.
+            If you want to check my CV, so download button is below!
+            Want to look over my social media accounts? Links at the bottom of the site.
           </p>
           <button className={iS.button}> Download Resume</button>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WorkDetailPage = () => {
+const ProjectDetailName = () => {
     return (
         <div>
             <h1>Works</h1>
@@ -8,4 +8,4 @@ const WorkDetailPage = () => {
     )
 }
 
-export default WorkDetailPage
+export default ProjectDetailName

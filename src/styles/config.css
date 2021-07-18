@@ -1,8 +1,8 @@
 /* Config with global view
    include variables & mixins & etc */
-
-$text-c: #21243d;
-$primary-c: #ff6464;
+$white-c:     #ffffff;
+$text-c:      #21243d;
+$primary-c:   #ff6464;
 $secondary-c: #00a8cc;
 
 * {
