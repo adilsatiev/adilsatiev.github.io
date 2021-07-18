@@ -21,7 +21,7 @@ const Footer = () => {
                     </a>
                     </li>
                 <li className={fS.item}>
-                    <a href="https://tg.com/ad1ls">
+                    <a href="https://tg.com/adilsatiev">
                         <img className={fS.img} src={footerTg} alt='icon'></img>
                     </a>
                 </li>
@@ -33,6 +33,8 @@ const Footer = () => {
             </ul>
 
             <span className={fS.copy}>Copyright ©2021 All rights reserved </span>
+            <span className={fS.creator}>Created by Adil. Powered by <a href='https://gatsbyjs.com'>Gatsby</a> </span>
+
         </footer>
     )
 }
