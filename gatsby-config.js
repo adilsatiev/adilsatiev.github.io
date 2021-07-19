@@ -1,5 +1,16 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Hey! My name is Adil and',
+    author: 'Adil'
+  },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
@@ -11,5 +22,6 @@ module.exports = {
         ],
       },
     },
+    'gatsby-transformer-remark'
   ],
 }

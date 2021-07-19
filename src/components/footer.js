@@ -4,8 +4,20 @@ import footerVk from '../img/footer-vk.svg'
 import footerInst from '../img/footer-inst.svg'
 import footerTg from '../img/footer-tg.svg'
 import footerGit from '../img/footer-git.svg'
+import { graphql, useStaticQuery } from 'gatsby'
+
 
 const Footer = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    author
+                }
+            }
+        }
+    `)
+    
     return (
         <footer className={fS.footer}>
 
@@ -33,7 +45,7 @@ const Footer = () => {
             </ul>
 
             <span className={fS.copy}>Copyright ©2021 All rights reserved </span>
-            <span className={fS.creator}>Created by Adil. Powered by <a href='https://gatsbyjs.com'>Gatsby</a> </span>
+            <span className={fS.creator}>Created by {data.site.siteMetadata.author}. Powered by <a href='https://gatsbyjs.com'>Gatsby</a> </span>
 
         </footer>
     )

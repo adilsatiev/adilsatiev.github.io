@@ -2,6 +2,12 @@
 @import 'reset.css';
 @import 'config.css';
 
+.wrapper {
+    /* background: url('../img/binary.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .main {
     display: flex;
     justify-content: space-between;
@@ -9,7 +15,7 @@
     margin: 0 auto;
     padding: 0 20px;
 
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     .box {
         display: flex;
         flex-direction: column;
