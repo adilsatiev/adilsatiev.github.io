@@ -3,15 +3,25 @@
 .container {
     max-width: 970px;
     margin: 0 auto;
-
-    padding: 0 20x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 500px;
+    padding: 0 20px;
+}
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    .header {
+        font-size: 30px;
+    }
+    .link {
+        text-decoration: none;
+        margin-left: 10px;
+    }
 }
 
-.header {
-    text-align: center;
-}
-
-.date {
-    text-align: center;
-    font-size: 14px;
-}

@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import * as bS from '../styles/blogtemplate.module.css'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 export const query = graphql`
 query ( $slug: String! ) {
@@ -9,6 +9,8 @@ query ( $slug: String! ) {
       frontmatter {
         title
         date
+        topic
+        description
       }
       html
     }
@@ -19,15 +21,15 @@ const BlogTemplate = (props) => {
     return (
         <Layout>
             <div className={bS.container}>
-                <h1 className={bS.header}>
-                    {props.data.markdownRemark.frontmatter.title}
-                </h1>
+                <div className={bS.headerWrapper}>
+                    <h1 className={bS.header}>
+                        {props.data.markdownRemark.frontmatter.title}
+                    </h1>
+                    <Link className={bS.link} to='/blog'>Go back</Link>
+                </div>
+                
 
-                <span className={bS.date}>
-                    {props.data.markdownRemark.frontmatter.date}
-                </span>
-
-                <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
+                <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
             </div>
         </Layout>
     )

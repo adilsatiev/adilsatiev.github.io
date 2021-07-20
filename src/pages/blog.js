@@ -13,6 +13,8 @@ const BlogPage = () => {
                         frontmatter {
                             title 
                             date
+                            topic
+                            description
                         }
                         fields {
                             slug
@@ -26,16 +28,26 @@ const BlogPage = () => {
         <Layout>
             <div className={bS.container}>
                 <h1 className={bS.header}>Blog</h1>
-                <ul lclassName={bS.list}>
+                <ul className={bS.list}>
                     {data.allMarkdownRemark.edges.map((edge) => {
                         return (
-                            <li className={bS.item}> 
+                            <li className={bS.item}>
                                 <h2 className={bS.title}>
-                                    <Link to={`/blog/${edge.node.fields.slug}`}>
-                                      {edge.node.frontmatter.title}
+                                    <Link className={bS.link} to={`/blog/${edge.node.fields.slug}`}>
+                                        {edge.node.frontmatter.title}
                                     </Link>
                                 </h2>
-                                <span className={bS.date}>{edge.node.frontmatter.date}</span>
+                                <div className={bS.key}>
+                                    <span className={bS.date}>
+                                        {edge.node.frontmatter.date}
+                                    </span>
+                                    <span className={bS.topic}>
+                                        {edge.node.frontmatter.topic}
+                                    </span>
+                                </div>
+                                <p className={bS.description}>
+                                    {edge.node.frontmatter.description}
+                                </p>
                             </li>
                         )
                     })}
