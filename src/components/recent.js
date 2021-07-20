@@ -19,9 +19,9 @@ const Recent = () => {
                         </h3>
                         <div className={rS.key}>
                             <span className={rS.data}>12 Jul 2021</span>
-                            <span className={rS.topic}>Design, Pattern</span>
+                            <span>Design, Pattern</span>
                         </div>
-                        <p className={rS.description}>
+                        <p>
                             Amet minim mollit non deserunt ullamco est sit aliqua
                             dolor do amet sint. Velit officia consequat durS enim
                             velit mollit. Exercitation veniam consequat sunt nostrud amet.
@@ -36,9 +36,9 @@ const Recent = () => {
                         </h3>
                         <div className={rS.key}>
                             <span className={rS.data}>05 May 2021</span>
-                            <span className={rS.topic}>Figma, Design</span>
+                            <span>Figma, Design</span>
                         </div>
-                        <p className={rS.description}>
+                        <p>
                             Amet minim mollit non deserunt ullamco est sit aliqua
                             dolor do amet sint. Velit officia consequat duis enim
                             velit mollit. Exercitation veniam consequat sunt nostrud amet.

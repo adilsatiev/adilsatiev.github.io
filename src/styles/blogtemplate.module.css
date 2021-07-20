@@ -1,0 +1,17 @@
+@import 'config.css';
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+
+    padding: 0 20x;
+}
+
+.header {
+    text-align: center;
+}
+
+.date {
+    text-align: center;
+    font-size: 14px;
+}

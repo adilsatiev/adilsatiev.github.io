@@ -16,6 +16,10 @@
 .wrapper {
     margin-left: 20px;
 }
+.list {
+    display: flex;
+    flex-direction: column;
+}
 .item {
     display: flex;
     position: relative;

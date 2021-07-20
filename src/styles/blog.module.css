@@ -11,3 +11,19 @@
     font-weight: 500;
     margin-bottom: 30px;
 }
+
+.list {
+    display: flex;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.date {
+    font-size: 14px;
+}

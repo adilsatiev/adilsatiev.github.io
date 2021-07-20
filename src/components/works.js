@@ -11,7 +11,7 @@ const Works = () => {
 
             <h2 className={wS.h2}>Featured works</h2>
 
-            <ul className={wS.list}>
+            <ul>
 
                 <li className={wS.item}>
                     <div><img src={workImgOne} alt='Work'></img></div>
