@@ -31,22 +31,26 @@ const Recent = () => {
                     </Link>
                 </h2>
                 <ul className={rS.list}>
-                    {data.allMarkdownRemark.edges.map((edge) => {
+                    {data.allMarkdownRemark.edges.slice(0, 2).map((edge) => {
                         return (
                                 <li className={rS.post}>
                                     <h3 className={rS.title}>
-                                        <Link className={rS.link} to='/'>Making a desing system from scratch</Link>
+                                        <Link className={rS.link} to={`/blog/${edge.node.fields.slug}`}>
+                                            {edge.node.frontmatter.title}
+                                        </Link>
                                     </h3>
         
                                     <div className={rS.key}>
-                                        <span className={rS.data}>12 Jul 2021</span>
-                                        <span>Design, Pattern</span>
+                                        <span className={rS.data}>
+                                            {edge.node.frontmatter.date}
+                                        </span>
+                                        <span>
+                                            {edge.node.frontmatter.topic}
+                                        </span>
                                     </div>
         
                                     <p className={rS.description}>
-                                        Amet minim mollit non deserunt ullamco est sit aliqua
-                                        dolor do amet sint. Velit officia consequat durS enim
-                                        velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                        {edge.node.frontmatter.description}
                                     </p>
                                 </li>
                                 )

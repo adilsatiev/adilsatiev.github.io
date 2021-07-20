@@ -9,12 +9,8 @@ $secondary-c: #00a8cc;
    font-family: "Ubuntu", sans-serif;
    color: $text-c;
 }
-
-html,
-body {
-   height: 100%;
-   overflow: auto;
-}
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
 
 html {
    overflow: scroll;
