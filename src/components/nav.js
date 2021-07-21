@@ -7,7 +7,7 @@ const Nav = () => {
         <nav className={nS.nav}>
             <ul className={nS.list}>
                 <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/'>Home</Link></li>
-                <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/project'>Projects</Link></li>
+                <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/project'>Works</Link></li>
                 <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/blog'>Blog</Link></li>
                 <li className={nS.item}><Link className={nS.link} activeClassName={nS.active} to='/contact'>Contact</Link></li>
             </ul>

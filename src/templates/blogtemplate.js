@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import * as bS from '../styles/blogtemplate.module.css'
 import { graphql, Link } from 'gatsby'
+import Head from '../components/head'
 
 export const query = graphql`
 query ( $slug: String! ) {
@@ -20,6 +21,7 @@ query ( $slug: String! ) {
 const BlogTemplate = (props) => {
     return (
         <Layout>
+            <Head title={props.data.markdownRemark.frontmatter.title}/>
             <div className={bS.container}>
                 <div className={bS.headerWrapper}>
                     <h1 className={bS.header}>

@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Hey! My name is Adil and',
-    author: 'Adil'
+    title: 'ADIL SATIEV',
   },
+  
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

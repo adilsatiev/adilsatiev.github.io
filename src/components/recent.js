@@ -5,7 +5,12 @@ import { graphql, Link, useStaticQuery } from 'gatsby'
 const Recent = () => {
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark (
+                sort: {
+                    fields: frontmatter___date,
+                    order: DESC
+                }
+            ) {
                 edges {
                     node {
                         frontmatter {

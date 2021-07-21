@@ -8,12 +8,14 @@ import workImgThree from '../img/work-img3.png'
 import workImgFour from '../img/work-img4.png'
 
 import { Link } from 'gatsby'
+import Head from '../components/head'
 
 const ProjectPage = () => {
     return (
         <Layout>
+            <Head title="Works"/>
             <div className={pS.container}>
-                <h2 className={pS.h2}>Projects</h2>
+                <h2 className={pS.h2}>Works</h2>
                 <ul className={pS.list}>
 
                     <li className={pS.item}>

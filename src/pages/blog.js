@@ -2,12 +2,18 @@ import React from 'react'
 import Layout from '../components/layout'
 import * as bS from '../styles/blog.module.css'
 import { graphql, Link, useStaticQuery } from 'gatsby'
+import Head from '../components/head'
 
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark {
+            allMarkdownRemark (
+                sort: {
+                    fields: frontmatter___date,
+                    order: DESC
+                }
+            ) {
                 edges {
                     node {
                         frontmatter {
@@ -26,6 +32,7 @@ const BlogPage = () => {
     `)
     return (
         <Layout>
+            <Head title='Blog'/>
             <div className={bS.container}>
                 <h1 className={bS.header}>Blog</h1>
                 <ul className={bS.list}>

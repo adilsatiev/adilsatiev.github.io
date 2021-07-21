@@ -23,7 +23,8 @@
         content: '';
         width: 100%;
         position: absolute;
-        border: 1px solid #E0E0E0;
+        border: 0.5px solid #E0E0E0;
+        background: #E0E0E0;
         bottom: -25px;
 
     }

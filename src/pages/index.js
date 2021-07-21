@@ -5,28 +5,19 @@ import * as iS from '../styles/index.module.css'
 import Layout from '../components/layout'
 import Works from '../components/works'
 import Recent from '../components/recent'
-import { graphql, useStaticQuery } from 'gatsby'
-
+import Head from '../components/head'
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <Layout>
+      <Head title='Home'/>
+
       <div className={iS.wrapper}>
 
         <div className={iS.main}>
           <div className={iS.box}>
             <h1 className={iS.header}>
-              {data.site.siteMetadata.title}
+              Hey! My name is Adil and
               I'm a {''}
               <Typical
                 loop={Infinity}
@@ -50,6 +41,7 @@ const IndexPage = () => {
               If you want to check my CV, so download button is below!
               Want to look over my social media accounts? Links at the bottom of the site.
             </p>
+            
             <button className={iS.button}> Download Resume</button>
           </div>
 

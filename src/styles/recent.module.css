@@ -55,7 +55,8 @@
         content: '';
         position: absolute;
         height: 20px;
-        border: 1px solid $text-c;
+        border: 0.5px solid $text-c;
+        background: $text-c;
         right: -20px;
         top: 3px;
     }
