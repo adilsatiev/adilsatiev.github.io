@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react"
 
 const ProjectDetailName = () => {
-    return (
-        <div>
-            <h1>Works</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Works</h1>
+    </div>
+  )
 }
 
 export default ProjectDetailName
