@@ -12,7 +12,7 @@ const Nav = () => {
           </Link>
         </li>
         <li className={nS.item}>
-          <Link className={nS.link} activeClassName={nS.active} to="/project">
+          <Link className={nS.link} activeClassName={nS.active} to="/projects">
             Works
           </Link>
         </li>

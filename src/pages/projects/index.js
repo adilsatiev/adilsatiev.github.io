@@ -1,14 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
-import * as pS from "../styles/project.module.css"
+import Layout from "../../components/layout"
+import * as pS from "../../styles/project.module.css"
 
-import workImgOne from "../img/work-img1.png"
-import workImgTwo from "../img/work-img2.png"
-import workImgThree from "../img/work-img3.png"
-import workImgFour from "../img/work-img4.png"
+import workImgOne from "../../img/work-img1.png"
+import workImgTwo from "../../img/work-img2.png"
+import workImgThree from "../../img/work-img3.png"
+import workImgFour from "../../img/work-img4.png"
 
 import { Link } from "gatsby"
-import Head from "../components/head"
+import Head from "../../components/head"
 
 const ProjectPage = () => {
   return (
@@ -19,7 +19,7 @@ const ProjectPage = () => {
         <ul className={pS.list}>
           <li className={pS.item}>
             <div>
-              <img src={workImgOne} alt="Work"></img>
+              <img className={pS.img} src={workImgOne} alt="Work"></img>
             </div>
             <div className={pS.wrapper}>
               <h3 className={pS.title}>
@@ -41,7 +41,7 @@ const ProjectPage = () => {
 
           <li className={pS.item}>
             <div>
-              <img src={workImgTwo} alt="Work"></img>
+              <img className={pS.img} src={workImgTwo} alt="Work"></img>
             </div>
             <div className={pS.wrapper}>
               <h3 className={pS.title}>
@@ -63,7 +63,7 @@ const ProjectPage = () => {
 
           <li className={pS.item}>
             <div>
-              <img src={workImgThree} alt="Work"></img>
+              <img className={pS.img} src={workImgThree} alt="Work"></img>
             </div>
             <div className={pS.wrapper}>
               <h3 className={pS.title}>
@@ -85,7 +85,7 @@ const ProjectPage = () => {
 
           <li className={pS.item}>
             <div>
-              <img src={workImgFour} alt="Work"></img>
+              <img className={pS.img} src={workImgFour} alt="Work"></img>
             </div>
             <div className={pS.wrapper}>
               <h3 className={pS.title}>

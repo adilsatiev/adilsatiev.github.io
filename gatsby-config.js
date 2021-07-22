@@ -1,4 +1,8 @@
 module.exports = {
+  flags: {
+    THE_FLAG: false
+  },
+
   siteMetadata: {
     title: 'ADIL SATIEV',
   },

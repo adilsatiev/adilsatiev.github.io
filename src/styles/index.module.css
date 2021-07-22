@@ -16,10 +16,21 @@
     padding: 0 20px;
 
     padding-bottom: 100px;
+    @media (max-width: 760px) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
     .box {
         display: flex;
         flex-direction: column;
         max-width: 500px;
+        margin-right: 1rem;
+        @media (max-width: 760px) {
+            margin-top: 15px;
+            order: 1;
+        }
     }
     
     .header {
@@ -96,6 +107,8 @@
     .photo {
         margin-top: 30px;
         display: block;
+        max-width: 100%;
+
     }
 }
 

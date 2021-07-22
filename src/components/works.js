@@ -13,7 +13,7 @@ const Works = () => {
       <ul>
         <li className={wS.item}>
           <div>
-            <img src={workImgOne} alt="Work"></img>
+            <img className={wS.img} src={workImgOne} alt="Work"></img>
           </div>
           <div className={wS.wrapper}>
             <h3 className={wS.title}>
@@ -35,7 +35,7 @@ const Works = () => {
 
         <li className={wS.item}>
           <div>
-            <img src={workImgTwo} alt="Work"></img>
+            <img className={wS.img} src={workImgTwo} alt="Work"></img>
           </div>
           <div className={wS.wrapper}>
             <h3 className={wS.title}>
@@ -57,7 +57,7 @@ const Works = () => {
 
         <li className={wS.item}>
           <div>
-            <img src={workImgThree} alt="Work"></img>
+            <img className={wS.img} src={workImgThree} alt="Work"></img>
           </div>
           <div className={wS.wrapper}>
             <h3 className={wS.title}>
