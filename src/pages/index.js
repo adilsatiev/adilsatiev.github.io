@@ -1,7 +1,7 @@
 import React from "react"
 import Typical from "react-typical"
 import introPhoto from "../img/intro-photo.png"
-import * as iS from "../styles/index.module.css"
+import * as iS from "../styles/pages/index.module.css"
 import Layout from "../components/layout"
 import Works from "../components/works"
 import Recent from "../components/recent"

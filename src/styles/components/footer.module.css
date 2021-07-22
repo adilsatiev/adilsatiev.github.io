@@ -1,5 +1,4 @@
-@import 'config.css';
-
+@import '../global/config.css';
 
 .footer {
     display: flex;

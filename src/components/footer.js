@@ -1,5 +1,5 @@
 import React from "react"
-import * as fS from "../styles/footer.module.css"
+import * as fS from "../styles/components/footer.module.css"
 import footerVk from "../img/footer-vk.svg"
 import footerInst from "../img/footer-inst.svg"
 import footerTg from "../img/footer-tg.svg"

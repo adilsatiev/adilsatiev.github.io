@@ -1,0 +1,38 @@
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+
+    padding: 0 20px;
+    margin-bottom: 200px;
+}
+
+.title {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.key {
+    margin-bottom: 15px;
+}
+
+.data {
+    padding: 2px 6px;
+    color: white;
+    font-weight: bold;
+    background: #FF7C7C;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+.topic {
+    color: #8695A4;
+}
+.text {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+.header-four {
+    margin-bottom: 30px;
+}
+.img-wrapper {
+    margin-bottom: 25px;
+}

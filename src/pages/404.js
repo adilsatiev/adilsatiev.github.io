@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "../components/head"
 import Layout from "../components/layout"
-import * as iS from "../styles/index.module.css"
+import * as iS from "../styles/pages/index.module.css"
 
 const NotFound = () => {
   return (

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-@import 'reset.css';
-@import 'config.css';
+@import '../global/reset.css';
+@import '../global/config.css';
 
 .wrapper {
     /* background: url('../img/binary.png'); */

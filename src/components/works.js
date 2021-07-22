@@ -1,5 +1,5 @@
 import React from "react"
-import * as wS from "../styles/works.module.css"
+import * as wS from "../styles/components/works.module.css"
 import workImgOne from "../img/work-img1.png"
 import workImgTwo from "../img/work-img2.png"
 import workImgThree from "../img/work-img3.png"

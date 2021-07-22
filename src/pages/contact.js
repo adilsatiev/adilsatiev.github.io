@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "../components/head"
 import Layout from "../components/layout"
-import * as cS from "../styles/contact.module.css"
+import * as cS from "../styles/pages/contact.module.css"
 
 const ContactPage = () => {
   return (

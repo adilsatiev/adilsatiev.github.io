@@ -1,7 +1,7 @@
 import React from "react"
 import Nav from "./Nav"
 import Footer from "./footer"
-import * as lS from "../styles/layout.module.css"
+import * as lS from "../styles/components/layout.module.css"
 
 const Layout = props => {
   return (

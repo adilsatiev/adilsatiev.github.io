@@ -13,13 +13,13 @@ module.exports.onCreateNode = ({ node, actions }) => {
     }
 }
 
-exports.onCreatePage = async ({ page, actions }) => {
-    const { createPage } = actions
-    if (page.path.match(/^\/projects/)) {
-        page.matchPath = "/projects/*"
-        createPage(page)
-    }
-}
+// exports.onCreatePage = async ({ page, actions }) => {
+//     const { createPage } = actions
+//     if (page.path.match(/^\/projects/)) {
+//         page.matchPath = "/projects/*"
+//         createPage(page)
+//     }
+// }
 
 module.exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions

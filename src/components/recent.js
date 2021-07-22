@@ -1,5 +1,5 @@
 import React from "react"
-import * as rS from "../styles/recent.module.css"
+import * as rS from "../styles/components/recent.module.css"
 import { graphql, Link, useStaticQuery } from "gatsby"
 
 const Recent = () => {

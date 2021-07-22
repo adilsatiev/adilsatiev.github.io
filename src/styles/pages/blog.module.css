@@ -1,4 +1,4 @@
-@import 'config.css';
+@import '../global/config.css';
 
 .container {
     max-width: 970px;

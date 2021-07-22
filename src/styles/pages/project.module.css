@@ -1,4 +1,4 @@
-@import url('config.css');
+@import '../global/config.css';
 
 .container {
     max-width: 970px;
@@ -9,12 +9,16 @@
 }
 
 .h2 {
-    font-size: 22px;
-    font-weight: normal;
+    font-size: 44px;
+    font-weight: 500;
     margin-bottom: 30px;
 }
 .wrapper {
     margin-left: 20px;
+}
+.list {
+    display: flex;
+    flex-direction: column;
 }
 .item {
     display: flex;
@@ -23,8 +27,7 @@
         content: '';
         width: 100%;
         position: absolute;
-        border: 0.5px solid #E0E0E0;
-        background: #E0E0E0;
+        border: 1px solid #E0E0E0;
         bottom: -25px;
 
     }
@@ -33,9 +36,7 @@
     }
 }
 .img {
-    @media (max-width: 425px) {
-        display: none;
-    }
+    max-width: 100%;
 }
 .title {
     font-size: 30px;
