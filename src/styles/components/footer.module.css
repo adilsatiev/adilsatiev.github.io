@@ -2,36 +2,32 @@
 
 .footer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    flex-direction: column;
     align-self: center;
     margin-bottom: 20px;
-}
-
-.list {
-    display: flex;
-    margin-bottom: 15px;
-}
-
-.item {
-    margin: 0 10px;
-}
-
-.img {
-    width: 30px;
-    height: 30px;
-    transition: 150ms;
-    &:hover {
-        opacity: 0.8;
+    .list {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .item {
+        margin: 0 10px;
+    }
+    .img {
+        width: 30px;
+        height: 30px;
+        transition: 150ms;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .copy {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .creator {
+        font-size: 10px;
     }
 }
 
-.copy {
-    font-size: 12px;
-    margin-bottom: 2px;
-}
-.creator {
-    font-size: 10px;
-}

@@ -1,6 +1,5 @@
 @import '../global/config.css';
 
-
 .nav {
     align-self: flex-end;
     margin-bottom: 105px;
@@ -12,31 +11,32 @@
         align-self: center;
         margin-bottom: 70px;
     }
-}
-
-.list {
-    list-style: none;
-    display: flex;
-}
-
-.item {
-    margin: 0 1rem;
-    @media (max-width: 376px) {
-        margin: 0 0.6rem;
-        font-size: 16px;
+    .list {
+        list-style: none;
+        display: flex;
     }
-}
-
-.link {
-    display: inline-block;
-    text-decoration: none;
-    transition: 100ms;
-    &:hover {
+    .item {
+        margin: 0 1rem;
+        @media (max-width: 376px) {
+            margin: 0 0.6rem;
+            font-size: 16px;
+        }
+    }
+    .link {
+        display: inline-block;
+        text-decoration: none;
+        transition: 100ms;
+        &:hover {
+            color: $primary-c;
+            transform: scale(1.03);
+        }
+    }
+    .active {
         color: $primary-c;
-        transform: scale(1.03);
     }
 }
 
-.active {
-    color: $primary-c;
-}
+
+
+
+

@@ -1,24 +1,58 @@
 @import '../global/config.css';
 
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 970px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: 300px;
+    .header {
+        font-size: 44px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
     
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 200px;
-}
-.box {
-    width: 700px;
-    height: 400px;
-    align-self: center;
+    .social {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    border-radius: 5px;
-    box-shadow: 0px 0px 15px -1px rgba(34, 60, 80, 0.2);
+    .gmail {
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .find {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .list {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .link {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .dedicated {
+        color: $primary-c;
+    }
 }
-.header {
-    font-size: 44px;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
+

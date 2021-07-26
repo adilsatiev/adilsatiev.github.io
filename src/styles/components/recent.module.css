@@ -2,71 +2,68 @@
 
 
 .recent {
-    padding: 30px 20px;
     background: #EDF7FA;
-    
+    padding: 30px 20px;
     margin-bottom: 50px;
-}
-
-.wrapper {
-    max-width: 950px;
-    margin: 0 auto;
-}
-
-.h2 {
-    font-size: 22px;
-    font-weight: normal;
-    margin-bottom: 20px;
-}
-
-.list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.post {
-    padding: 25px;
-    max-width: 420px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
-    border-radius: 4px;
-    @media (max-width: 888px) {
-        margin-top: 20px;
+    .wrapper {
+        max-width: 950px;
+        margin: 0 auto;
     }
-}
-
-.title {
-    font-size: 26px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.key {
-    display: flex;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.data {
-    margin-right: 40px;
-    position: relative;
-    &::after {
-        content: '';
-        position: absolute;
-        height: 20px;
-        border: 0.5px solid $text-c;
-        background: $text-c;
-        right: -20px;
-        top: 3px;
+    .h2 {
+        font-size: 22px;
+        font-weight: normal;
+        margin-bottom: 20px;
     }
-}
-
-.description {
-    font-weight: 400;
-    font-size: 16px;
+    
+    .list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .post {
+        padding: 25px;
+        max-width: 420px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+        border-radius: 4px;
+        @media (max-width: 888px) {
+            margin-top: 20px;
+        }
+    }
+    
+    .title {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    .link {
+        text-decoration: none;
+    }
+    
+    .key {
+        display: flex;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .data {
+        position: relative;
+        margin-right: 40px;
+        &::after {
+            content: '';
+            position: absolute;
+            height: 20px;
+            border: 0.5px solid $text-c;
+            background: $text-c;
+            right: -20px;
+            top: 3px;
+        }
+    }
+    
+    .description {
+        font-weight: 400;
+        font-size: 16px;
+    }
 }

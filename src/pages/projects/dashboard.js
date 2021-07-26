@@ -20,12 +20,12 @@ export default function Dashboard() {
           veniam c onsequat sunt nostrud amet.
         </p>
         <div className={dS.imgWrapper}> 
-            <img src={prjImgOne}></img>
+            <img src={prjImgOne} alt='ProjectImg'></img>
         </div>
         <h3 className={dS.headerThree}>Heading 3</h3>
         <h4 className={dS.headerFour} >Heading 4</h4>
         <div className={dS.imgWrapper}> 
-            <img src={prjImgTwo}></img>
+            <img src={prjImgTwo} alt='ProjectImg'></img>
         </div>
       </div>
     </Layout>

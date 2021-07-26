@@ -1,69 +1,73 @@
-@import '../global/config.css';
-
+@import "../global/config.css";
 
 .container {
     max-width: 970px;
     margin: 0 auto;
-    margin-bottom: 150px;
-
     padding: 0 20px;
-}
+    margin-bottom: 150px;
+    .h2 {
+        font-size: 22px;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
 
-.h2 {
-    font-size: 22px;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
-.wrapper {
-    margin-left: 20px;
-}
-.item {
-    display: flex;
-    position: relative;
-    &::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        border: 0.5px solid #E0E0E0;
-        background: #E0E0E0;
-        bottom: -25px;
+    .wrapper {
+        margin-left: 20px;
+    }
+    
+    .item {
+        display: flex;
+        position: relative;
+        &::after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            border: 0.5px solid #e0e0e0;
+            background: #e0e0e0;
+            bottom: -25px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
 
+    .img {
+        @media (max-width: 425px) {
+            display: none;
+        }
     }
-    &:not(:last-child) {
-        margin-bottom: 60px;
-    }
-}
-.img {
-    @media (max-width: 425px) {
-        display: none;
-    }
-}
-.title {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-.link {
-    text-decoration: none;
-    transition: 100ms;
-    &:hover {
-        color: $primary-c;
-    }
-}
-.key {
-    margin-bottom: 15px;
-}
 
-.data {
-    padding: 2px 6px;
-    color: white;
-    font-weight: bold;
-    background: #142850;
-    border-radius: 16px;
-    margin-right: 20px;
-}
-.topic {
-    color: #8695A4;
-}
-.text {
-    max-width: 700px;
+    .title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .link {
+        text-decoration: none;
+        transition: 100ms;
+        &:hover {
+            color: $primary-c;
+        }
+    }
+
+    .key {
+        margin-bottom: 15px;
+    }
+
+    .data {
+        padding: 2px 6px;
+        color: white;
+        font-weight: bold;
+        background: #142850;
+        border-radius: 16px;
+        margin-right: 20px;
+    }
+
+    .topic {
+        color: #8695a4;
+    }
+
+    .text {
+        max-width: 700px;
+    }
 }

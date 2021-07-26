@@ -4,66 +4,98 @@
     max-width: 970px;
     margin: 0 auto;
     margin-bottom: 150px;
-
     padding: 0 20px;
 }
 
 .h2 {
     font-size: 44px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
-.wrapper {
-    margin-left: 20px;
+.using {
+    margin-bottom: 20px;
+    .h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .icons-list {
+        display: flex;
+    }
+    .icons-item {
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 5px;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
 }
+
 .list {
     display: flex;
     flex-direction: column;
-}
-.item {
-    display: flex;
-    position: relative;
-    &::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        border: 1px solid #E0E0E0;
-        bottom: -25px;
+    .item {
+        display: flex;
+        position: relative;
+        &::after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            border: 0.5px solid #E0E0E0;
+            background: #E0E0E0;
+            bottom: -25px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
 
+    .img {
+        max-width: 100%;
     }
-    &:not(:last-child) {
-        margin-bottom: 60px;
+    
+    .wrapper {
+        margin-left: 20px;
     }
-}
-.img {
-    max-width: 100%;
-}
-.title {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-.link {
-    text-decoration: none;
-    transition: 100ms;
-    &:hover {
-        color: $primary-c;
+
+    .title {
+        font-size: 30px;
+        margin-bottom: 15px;
     }
-}
-.key {
-    margin-bottom: 15px;
+
+    .link {
+        text-decoration: none;
+        transition: 100ms;
+        &:hover {
+            color: $primary-c;
+        }
+    }
+
+    .key {
+        margin-bottom: 15px;
+    }
+    
+    .data {
+        padding: 2px 6px;
+        color: white;
+        font-weight: bold;
+        background: #142850;
+        border-radius: 16px;
+        margin-right: 20px;
+    }
+
+    .topic {
+        color: #8695A4;
+    }
+
+    .text {
+        max-width: 700px;
+    }
 }
 
-.data {
-    padding: 2px 6px;
-    color: white;
-    font-weight: bold;
-    background: #142850;
-    border-radius: 16px;
-    margin-right: 20px;
-}
-.topic {
-    color: #8695A4;
-}
-.text {
-    max-width: 700px;
-}
+
+
+
+

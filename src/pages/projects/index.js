@@ -6,6 +6,11 @@ import workImgOne from "../../img/work-img1.png"
 import workImgTwo from "../../img/work-img2.png"
 import workImgThree from "../../img/work-img3.png"
 import workImgFour from "../../img/work-img4.png"
+import iHTML from "../../img/works-icons/html.svg"
+import iCSS from "../../img/works-icons/css.svg"
+import iJS from "../../img/works-icons/javascript.svg"
+import iReact from "../../img/works-icons/react.svg"
+import iNode from "../../img/works-icons/node-js.svg"
 
 import { Link } from "gatsby"
 import Head from "../../components/head"
@@ -17,6 +22,16 @@ const Router = () => {
       <Head title="Works" />
       <div className={pS.container}>
         <h2 className={pS.h2}>Works</h2>
+        <div className={pS.using}>
+          <h3 className={pS.h3}>I work with</h3>
+          <ul className={pS.iconsList}>
+            <li className={pS.iconsItem}><img className={pS.icon} src={iHTML}></img></li>
+            <li className={pS.iconsItem}><img className={pS.icon} src={iCSS}></img></li>
+            <li className={pS.iconsItem}><img className={pS.icon} src={iJS}></img></li>
+            <li className={pS.iconsItem}><img className={pS.icon} src={iReact}></img></li>
+            <li className={pS.iconsItem}><img className={pS.icon} src={iNode}></img></li>
+          </ul>
+        </div>
         <ul className={pS.list}>
             <li className={pS.item}>
               <div>
