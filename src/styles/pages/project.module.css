@@ -12,11 +12,16 @@
     font-weight: 500;
     margin-bottom: 15px;
 }
+
 .using {
     margin-bottom: 20px;
+    .main-stack {
+        display: flex;
+        align-items: center;
+    }
     .h3 {
         font-size: 20px;
-        margin-bottom: 5px;
+        margin-right: 20px;
     }
     .icons-list {
         display: flex;
