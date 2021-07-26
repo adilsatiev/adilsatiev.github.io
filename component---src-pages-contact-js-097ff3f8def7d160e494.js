@@ -1,2 +1,0 @@
-(self.webpackChunkadilsatievsite=self.webpackChunkadilsatievsite||[]).push([[501],{8080:function(e,t,a){"use strict";a.r(t),a.d(t,{default:function(){return r}});var c=a(7294),n=a(4695),l=a(8099),r=function(){return c.createElement(l.Z,null,c.createElement(n.Z,{title:"Contact"}),c.createElement("div",{className:"contact-module--container--3AFrV"},c.createElement("h1",{className:"contact-module--header--JI62w"},"Contact"),c.createElement("div",{className:"contact-module--box--1Jvx8"})))}}}]);
-//# sourceMappingURL=component---src-pages-contact-js-097ff3f8def7d160e494.js.map

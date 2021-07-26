@@ -1,2 +1,0 @@
-(self.webpackChunkadilsatievsite=self.webpackChunkadilsatievsite||[]).push([[957],{1993:function(e,t,l){"use strict";l.r(t);var n=l(7294);t.default=function(){return n.createElement("div",null,n.createElement("h1",null,"Works"))}}}]);
-//# sourceMappingURL=component---src-pages-projectdetail-js-cb66d82371d67248fc09.js.map
