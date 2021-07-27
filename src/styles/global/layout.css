@@ -25,6 +25,7 @@ html {
 body {
     --bg:            #ffffff;
     --recent-bg:     #EDF7FA;
+    --recent-post:   #ffffff;
     --text-color:    #ffffff;
     --text-white:    #ffffff;
     --text-color:    #21243d;
@@ -36,11 +37,16 @@ body {
 
     background-color: var(--bg);
     color: var(--text-color);
+    transition: all 450ms;
 }
 
 body.dark {
-    --bg: #222831;
-    --text-color: #cacaca;
+    --bg:            #1e2531;
+    --recent-bg:     #1e2531;
+    --recent-post:   #1e3857;
+    --text-color:    #e6e6e6;
+    --primary-color: #44b7c9;
+    --border-color:  #eeeeee;
 }
 
 .layout-container {

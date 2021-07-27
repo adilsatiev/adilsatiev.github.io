@@ -10,11 +10,11 @@ const Nav = () => {
                 {({ theme, toggleTheme }) => (
                     <label>
                         <input
+                            className={nS.toggle}
                             type="checkbox"
                             onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
                             checked={theme === "dark"}
                         />{" "}
-                        Dark mode
                     </label>
                 )}
             </ThemeToggler>

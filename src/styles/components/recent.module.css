@@ -1,4 +1,5 @@
 .recent {
+    transition: background 450ms;
     background: var(--recent-bg);
     padding: 30px 20px;
     margin-bottom: 50px;
@@ -21,7 +22,7 @@
     .post {
         padding: 25px;
         max-width: 420px;
-        background: var(--bg);
+        background: var(--recent-post);
         box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
         border-radius: 4px;
         @media (max-width: 888px) {
