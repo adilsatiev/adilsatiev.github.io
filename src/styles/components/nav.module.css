@@ -1,6 +1,7 @@
 @import '../global/config.css';
 
 .nav {
+    display: flex;
     align-self: flex-end;
     margin-bottom: 105px;
     font-size: 20px;
@@ -27,12 +28,12 @@
         text-decoration: none;
         transition: 100ms;
         &:hover {
-            color: $primary-c;
+            color: var(--primary-color);
             transform: scale(1.03);
         }
     }
     .active {
-        color: $primary-c;
+        color: var(--primary-color);
     }
 }
 

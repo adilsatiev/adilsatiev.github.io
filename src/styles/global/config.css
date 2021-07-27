@@ -1,16 +1,29 @@
 /* Config with global view
    include variables & mixins & etc */
-$white-c:     #ffffff;
-$text-c:      #21243d;
-$primary-c:   #2398AB;
-$secondary-c: #00a8cc;
 
 * {
    font-family: "Ubuntu", sans-serif;
-   color: $text-c;
 }
+
 html { height: 100%; overflow:auto; }
-body { height: 100%; }
+body { 
+    --bg:            #ffffff;
+    --text-white:    #ffffff;
+    --text-color:    #21243d;
+    --primary-color: #2398AB;
+    --border-color:  #E0E0E0;
+    --topic-color:   #8695A4;
+    --data-color:    #142850;
+    --tooltip-color: #636363;
+
+    background-color: var(--bg);
+    color: var(--text-color);
+ }
+
+body.dark {
+    --bg:            #222831;
+    --text-color:    #cacaca;
+}
 
 html {
    overflow: scroll;

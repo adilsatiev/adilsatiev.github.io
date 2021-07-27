@@ -55,8 +55,8 @@
             content: '';
             position: absolute;
             height: 20px;
-            border: 0.5px solid $text-c;
-            background: $text-c;
+            border: 0.5px solid var(--text-color);
+            background: var(--text-color);
             right: -20px;
             top: 3px;
         }

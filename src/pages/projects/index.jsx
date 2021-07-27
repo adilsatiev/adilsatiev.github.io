@@ -11,6 +11,13 @@ import iCSS from "../../img/works-icons/css.svg"
 import iJS from "../../img/works-icons/javascript.svg"
 import iReact from "../../img/works-icons/react.svg"
 import iNode from "../../img/works-icons/node-js.svg"
+import iSass from "../../img/works-icons/sass.svg"
+import iGatsby from "../../img/works-icons/gatsby.svg"
+import iExpress from "../../img/works-icons/express.svg"
+import iMongoDB from "../../img/works-icons/mongodb.svg"
+import iGraphQL from "../../img/works-icons/graphql.svg"
+import iWebpack from "../../img/works-icons/webpack.svg"
+import iFigma from "../../img/works-icons/figma.svg"
 
 import { Link } from "gatsby"
 import Head from "../../components/head"
@@ -23,27 +30,86 @@ const ProjectsPage = () => {
                 <h2 className={pS.h2}>Works</h2>
                 <div className={pS.using}>
                     <div className={pS.mainStack}>
-                        <h3 className={pS.h3}>I work with</h3>
+                        <h3 className={pS.h3}>Main Stack That I use</h3>
                         <ul className={pS.iconsList}>
-                            <li className={pS.iconsItem}>
-                                <img className={pS.icon} src={iHTML} alt="Icon"></img>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iHTML} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>HTML5</span>
                             </li>
-                            <li className={pS.iconsItem}>
-                                <img className={pS.icon} src={iCSS} alt="Icon"></img>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iCSS} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>CSS3</span>
                             </li>
-                            <li className={pS.iconsItem}>
-                                <img className={pS.icon} src={iJS} alt="Icon"></img>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iJS} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>JavaScript</span>
                             </li>
-                            <li className={pS.iconsItem}>
-                                <img className={pS.icon} src={iReact} alt="Icon"></img>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iReact} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>React</span>
                             </li>
-                            <li className={pS.iconsItem}>
-                                <img className={pS.icon} src={iNode} alt="Icon"></img>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iNode} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>Node.js</span>
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h3 className={pS.h3}>I work with</h3>
+                    <div className={pS.adStack}>
+                        <h3 className={pS.h3}>Also I know how to work with</h3>
+                        <ul className={pS.iconsList}>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iSass} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>Sass</span>
+                            </li>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iGatsby} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>Gatsby</span>
+                            </li>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iExpress} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>Express</span>
+                            </li>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iMongoDB} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>MongoDB</span>
+                            </li>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iGraphQL} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>GraphQL</span>
+                            </li>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iWebpack} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>Webpack</span>
+                            </li>
+                            <li className={pS.iconWrapper}>
+                                <div className={pS.iconsItem}>
+                                    <img className={pS.icon} src={iFigma} alt="Icon"></img>
+                                </div>
+                                <span className={pS.tooltiptext}>Figma</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <ul className={pS.list}>

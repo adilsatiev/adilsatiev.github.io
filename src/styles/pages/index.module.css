@@ -47,10 +47,10 @@
     
     .button {
         position: relative;
-        background: $primary-c;
+        background: var(--primary-color);
         border: 0;
         font-size: 20px;
-        color: $white-c;
+        color: var(--text-white);
         padding: 9px 15px;
         width: 210px;
         height: 45px;
@@ -90,7 +90,7 @@
             transform: translateX(-100px) skewX(-15deg);
         }
         &:hover{
-            background: $text-c;
+            background: var(--text-color);
             cursor: pointer;
             &:before{
             transform: translateX(300px)  skewX(-15deg);  

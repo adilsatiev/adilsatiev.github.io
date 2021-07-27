@@ -22,8 +22,8 @@
             content: "";
             width: 100%;
             position: absolute;
-            border: 0.5px solid #e0e0e0;
-            background: #e0e0e0;
+            border: 0.5px solid var(--border-color);
+            background: var(--border-color);
             bottom: -25px;
         }
         &:not(:last-child) {
@@ -46,7 +46,7 @@
         text-decoration: none;
         transition: 100ms;
         &:hover {
-            color: $primary-c;
+            color: var(--primary-color);
         }
     }
 
@@ -56,15 +56,15 @@
 
     .data {
         padding: 2px 6px;
-        color: white;
+        color: var(--text-white);
         font-weight: bold;
-        background: #142850;
+        background: var(--data-color);
         border-radius: 16px;
         margin-right: 20px;
     }
 
     .topic {
-        color: #8695a4;
+        color: var(--topic-color);
     }
 
     .text {
