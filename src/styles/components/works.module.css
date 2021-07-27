@@ -1,5 +1,3 @@
-@import "../global/config.css";
-
 .container {
     max-width: 970px;
     margin: 0 auto;
@@ -64,7 +62,7 @@
     }
 
     .topic {
-        color: var(--topic-color);
+        color: var(--topic-color)
     }
 
     .text {

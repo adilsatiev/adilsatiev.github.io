@@ -1,5 +1,3 @@
-@import '../global/config.css';
-
 .container {
     display: flex;
     flex-direction: column;

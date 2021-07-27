@@ -1,0 +1,112 @@
+.wrapper {
+    /* background: url('../img/binary.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 100px;
+    @media (max-width: 760px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin-right: 1rem;
+        @media (max-width: 760px) {
+            margin-top: 15px;
+            order: 1;
+        }
+    }
+    
+    .header {
+        font-size: 44px;
+        margin-bottom: 30px;
+        @media (max-width: 760px) {
+        }
+    }
+    
+    .text {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+    
+    .button {
+        position: relative;
+        background: var(--primary-color);
+        border: 0;
+        font-size: 20px;
+        color: var(--text-white);
+        padding: 9px 15px;
+        width: 210px;
+        height: 45px;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: 100ms;
+        @media (max-width: 760px) {
+            align-self: center;
+        }
+        &:focus{
+            outline: 0;
+        }
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            background: rgba(255,255,255,0.5);
+            width: 60px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: .5;
+            filter: blur(30px);
+            transform: translateX(-100px)  skewX(-15deg);
+        }
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            background: rgba(255,255,255,0.2);
+            width: 30px;
+            height: 100%;
+            left: 30px;
+            top: 0;
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateX(-100px) skewX(-15deg);
+        }
+        &:hover{
+            background: var(--text-color);
+            cursor: pointer;
+            &:before{
+            transform: translateX(300px)  skewX(-15deg);  
+            opacity: 0.6;
+            transition: .7s;
+            }
+            &:after{
+            transform: translateX(300px) skewX(-15deg);  
+            opacity: 1;
+            transition: .7s;
+            }
+        }
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+    
+    .photo {
+        margin-top: 30px;
+        display: block;
+        max-width: 100%;
+    }
+}

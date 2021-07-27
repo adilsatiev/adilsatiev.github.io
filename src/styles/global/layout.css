@@ -1,0 +1,53 @@
+/* Config with global view
+   include variables & mixins & etc */
+   
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import "./reset.css";
+
+* {
+    font-family: "Ubuntu", sans-serif;
+}
+
+html {
+    height: 100%;
+    overflow: auto;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar space */
+    background: transparent; /* optional: just make scrollbar invisible */
+}
+
+body {
+    --bg: #ffffff;
+    --text-color: #ffffff;
+    --text-white: #ffffff;
+    --text-color: #21243d;
+    --primary-color: #2398ab;
+    --border-color: #e0e0e0;
+    --topic-color: #8695a4;
+    --data-color: #142850;
+    --tooltip-color: #636363;
+
+    background-color: var(--bg);
+    color: var(--text-color);
+}
+
+body.dark {
+    --bg: #222831;
+    --text-color: #cacaca;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.layout-content {
+    flex-grow: 1;
+}

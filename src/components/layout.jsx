@@ -1,13 +1,13 @@
 import React from "react"
 import Nav from "./Nav"
 import Footer from "./footer"
-import * as lS from "../styles/components/layout.module.css"
+import "../styles/global/layout.css"
 
 const Layout = props => {
     return (
-        <div className={lS.container}>
+        <div className='layout-container'>
             <Nav />
-            <div className={lS.content}>{props.children}</div>
+            <div className='layout-content'>{props.children}</div>
             <Footer />
         </div>
     )
