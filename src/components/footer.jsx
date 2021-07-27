@@ -33,7 +33,7 @@ const Footer = () => {
 
             <span className={fS.copy}>Copyright ©2021 All rights reserved </span>
             <span className={fS.creator}>
-                Created by Adil S. Powered by <a href="https://gatsbyjs.com">Gatsby</a>{" "}
+                Created by Adil S. Powered by <a className={fS.link} href="https://gatsbyjs.com">Gatsby</a>{" "}
             </span>
         </footer>
     )

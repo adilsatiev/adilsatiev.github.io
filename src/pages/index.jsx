@@ -1,5 +1,4 @@
 import React from "react"
-import * as iS from "../styles/pages/index.module.css"
 import Layout from "../components/layout"
 import Works from "../components/works"
 import Recent from "../components/recent"

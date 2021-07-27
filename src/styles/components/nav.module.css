@@ -25,6 +25,7 @@
         display: inline-block;
         text-decoration: none;
         transition: 100ms;
+        color: var(--text-color);
         &:hover {
             color: var(--primary-color);
             transform: scale(1.03);

@@ -6,18 +6,6 @@ import workImgOne from "../../img/work-img1.png"
 import workImgTwo from "../../img/work-img2.png"
 import workImgThree from "../../img/work-img3.png"
 import workImgFour from "../../img/work-img4.png"
-import iHTML from "../../img/works-icons/html.svg"
-import iCSS from "../../img/works-icons/css.svg"
-import iJS from "../../img/works-icons/javascript.svg"
-import iReact from "../../img/works-icons/react.svg"
-import iNode from "../../img/works-icons/node-js.svg"
-import iSass from "../../img/works-icons/sass.svg"
-import iGatsby from "../../img/works-icons/gatsby.svg"
-import iExpress from "../../img/works-icons/express.svg"
-import iMongoDB from "../../img/works-icons/mongodb.svg"
-import iGraphQL from "../../img/works-icons/graphql.svg"
-import iWebpack from "../../img/works-icons/webpack.svg"
-import iFigma from "../../img/works-icons/figma.svg"
 
 import { Link } from "gatsby"
 import Head from "../../components/head"
@@ -34,31 +22,31 @@ const ProjectsPage = () => {
                         <ul className={pS.iconsList}>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iHTML} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.ihtml}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>HTML5</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iCSS} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.icss}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>CSS3</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iJS} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.ijs}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>JavaScript</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iReact} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.ireact}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>React</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iNode} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.inode}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>Node.js</span>
                             </li>
@@ -69,43 +57,43 @@ const ProjectsPage = () => {
                         <ul className={pS.iconsList}>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iSass} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.isass}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>Sass</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iGatsby} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.igatsby}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>Gatsby</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iExpress} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.iexpress}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>Express</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iMongoDB} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.imongo}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>MongoDB</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iGraphQL} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.igraph}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>GraphQL</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iWebpack} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.iwebpack}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>Webpack</span>
                             </li>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
-                                    <img className={pS.icon} src={iFigma} alt="Icon"></img>
+                                    <img className={`${pS.icon} ${pS.ifigma}`}></img>
                                 </div>
                                 <span className={pS.tooltiptext}>Figma</span>
                             </li>

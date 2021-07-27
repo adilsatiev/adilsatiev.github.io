@@ -21,7 +21,7 @@ export default function Dashboard() {
                 <div className={dS.imgWrapper}>
                     <img src={prjImgOne} alt="ProjectImg"></img>
                 </div>
-                <h3 className={dS.headerThree}>Heading 3</h3>
+                <h3>Heading 3</h3>
                 <h4 className={dS.headerFour}>Heading 4</h4>
                 <div className={dS.imgWrapper}>
                     <img src={prjImgTwo} alt="ProjectImg"></img>
