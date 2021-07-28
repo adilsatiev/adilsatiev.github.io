@@ -23,7 +23,7 @@
         padding: 25px;
         max-width: 420px;
         background: var(--recent-post);
-        box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+        box-shadow: 0px 0px 10px 3px var(--recent-shadow);
         border-radius: 4px;
         @media (max-width: 888px) {
             margin-top: 20px;

@@ -1,10 +1,9 @@
 .nav {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
     margin-bottom: 105px;
     font-size: 20px;
     padding-top: 40px;
-    padding-right: 30px;
     @media (max-width: 376px) {
         padding-right: 0;
         align-self: center;
@@ -13,6 +12,9 @@
     .list {
         list-style: none;
         display: flex;
+        @media (max-width: 376px) {
+            margin-top: 2px;
+        }
     }
     .item {
         margin: 0 1rem;
@@ -35,7 +37,6 @@
         color: var(--primary-color);
     }
 }
-
 .toggle {
     --size: 1.5rem;
 

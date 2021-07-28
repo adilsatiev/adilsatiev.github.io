@@ -1,32 +1,29 @@
 import React from "react"
 import * as fS from "../styles/components/footer.module.css"
-import footerVk from "../img/footer-vk.svg"
-import footerInst from "../img/footer-inst.svg"
-import footerTg from "../img/footer-tg.svg"
-import footerGit from "../img/footer-git.svg"
+import pixel from "../img/pixel.png"
 
 const Footer = () => {
     return (
         <footer className={fS.footer}>
             <ul className={fS.list}>
                 <li className={fS.item}>
-                    <a href="https://vk.com/adilsatiev">
-                        <img className={fS.img} src={footerVk} alt="icon"></img>
+                    <a className={fS.link} href="https://vk.com/adilsatiev">
+                        <img className={`${fS.icon} ${fS.ivk}`} src={pixel} alt="Icon"></img>
                     </a>
                 </li>
                 <li className={fS.item}>
-                    <a href="https://instagram.com/adilsatiev">
-                        <img className={fS.img} src={footerInst} alt="icon"></img>
+                    <a className={fS.link} href="https://instagram.com/adilsatiev">
+                        <img className={`${fS.icon} ${fS.iinst}`} src={pixel} alt="Icon"></img>
                     </a>
                 </li>
                 <li className={fS.item}>
-                    <a href="https://tg.com/adilsatiev">
-                        <img className={fS.img} src={footerTg} alt="icon"></img>
+                    <a className={fS.link} href="https://tg.com/adilsatiev">
+                        <img className={`${fS.icon} ${fS.itg}`} src={pixel} alt="Icon"></img>
                     </a>
                 </li>
                 <li className={fS.item}>
-                    <a href="https://github.com/adilsatiev">
-                        <img className={fS.img} src={footerGit} alt="icon"></img>
+                    <a className={fS.link} href="https://github.com/adilsatiev">
+                        <img className={`${fS.icon} ${fS.igit}`} src={pixel} alt="Icon"></img>
                     </a>
                 </li>
             </ul>

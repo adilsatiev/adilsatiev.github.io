@@ -12,13 +12,32 @@
     .item {
         margin: 0 10px;
     }
-    .img {
+    .link {
+        display: inline-block;
+    }
+    .icon {
         width: 30px;
         height: 30px;
         transition: 150ms;
         &:hover {
             opacity: 0.8;
         }
+    }
+    .ivk {
+        background: var(--text-color);
+        mask: url('../../img/footer-vk.svg')
+    }
+    .iinst {
+        background: var(--text-color);
+        mask: url('../../img/footer-inst.svg')
+    }
+    .itg {
+        background: var(--text-color);
+        mask: url('../../img/footer-tg.svg')
+    }
+    .igit {
+        background: var(--text-color);
+        mask: url('../../img/footer-git.svg')
     }
     .copy {
         font-size: 12px;

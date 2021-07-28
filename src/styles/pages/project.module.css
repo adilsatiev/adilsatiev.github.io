@@ -17,7 +17,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 45px;
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
             margin-bottom: 20px;
             flex-direction: column;
         }
@@ -27,7 +27,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 55px;
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
             flex-direction: column;
             margin-bottom: 20px;
         }
@@ -37,7 +37,7 @@
         font-size: 18px;
         font-weight: 500;
         margin-right: 30px;
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
             margin-bottom: 10px;
         }
     }
@@ -66,6 +66,10 @@
             border: 1px solid var(--border-color);
             box-shadow: 0px 0px 2px 1px rgba(35, 153, 171, 0.9);
         }
+        @media (max-width: 426px) {
+            border: 1px solid var(--border-color);
+            box-shadow: 0px 0px 2px 1px rgba(35, 153, 171, 0.9);
+        }
     }
 
     .icon {
@@ -75,52 +79,66 @@
 
     .ihtml {
         background: var(--text-color);
-        mask: url('../../img/works-icons/html.svg')
+        mask: url("../../img/works-icons/html.svg");
     }
-    
+
     .icss {
         background: var(--text-color);
-        mask: url('../../img/works-icons/css.svg')
+        mask: url("../../img/works-icons/css.svg");
     }
     .ijs {
         background: var(--text-color);
-        mask: url('../../img/works-icons/javascript.svg')
+        mask: url("../../img/works-icons/javascript.svg");
     }
     .ireact {
         background: var(--text-color);
-        mask: url('../../img/works-icons/react.svg')
+        mask: url("../../img/works-icons/react.svg");
     }
     .inode {
         background: var(--text-color);
-        mask: url('../../img/works-icons/node-js.svg')
+        mask: url("../../img/works-icons/node-js.svg");
     }
     .isass {
         background: var(--text-color);
-        mask: url('../../img/works-icons/sass.svg')
+        mask: url("../../img/works-icons/sass.svg");
     }
     .igatsby {
         background: var(--text-color);
-        mask: url('../../img/works-icons/gatsby.svg')
+        mask: url("../../img/works-icons/gatsby.svg");
     }
     .iexpress {
         background: var(--text-color);
-        mask: url('../../img/works-icons/express.svg')
+        mask: url("../../img/works-icons/express.svg");
     }
     .imongo {
         background: var(--text-color);
-        mask: url('../../img/works-icons/mongodb.svg')
+        mask: url("../../img/works-icons/mongodb.svg");
     }
     .igraph {
         background: var(--text-color);
-        mask: url('../../img/works-icons/graphql.svg')
+        mask: url("../../img/works-icons/graphql.svg");
     }
     .iwebpack {
         background: var(--text-color);
-        mask: url('../../img/works-icons/webpack.svg')
+        mask: url("../../img/works-icons/webpack.svg");
     }
     .ifigma {
         background: var(--text-color);
-        mask: url('../../img/works-icons/figma.svg')
+        mask: url("../../img/works-icons/figma.svg");
+    }
+
+    .tooltiptext {
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, var(--text-color) 100%, var(--text-color) 100%),
+            linear-gradient(to bottom, var(--text-color) 100%, var(--text-color) 100%),
+            linear-gradient(to right, var(--text-color) 100%, var(--text-color) 100%),
+            linear-gradient(to bottom, var(--text-color) 100%, var(--text-color) 100%);
+        background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+        border-radius: 2px;
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        animation: bg 0.45s cubic-bezier(0.19, 1, 0.22, 1) 1;
+        animation-play-state: paused;
+
     }
 
     .tooltiptext {
@@ -128,17 +146,41 @@
         width: 85px;
         color: var(--text-color);
         text-align: center;
-        border: 1px solid var(--tooltip-color);
-        border-radius: 5px;
         font-size: 14px;
-    
         position: absolute;
         z-index: 5;
         top: 60px;
         right: -17px;
+        transition: border 500ms;
+        @media (max-width: 426px) {
+            background: none;
+            visibility: visible;
+            width: 56px;
+            font-size: 13px;
+            right: -1px;
+        }
     }
     .icon-wrapper:hover .tooltiptext {
         visibility: visible;
+        animation-play-state: running;
+    }
+
+    @keyframes bg {
+        0% {
+            background-size: 0 1px, 1px 0, 0 1px, 1px 0;
+        }
+        25% {
+            background-size: 100% 1px, 1px 0, 0 1px, 1px 0;
+        }
+        50% {
+            background-size: 100% 1px, 1px 100%, 0 1px, 1px 0;
+        }
+        75% {
+            background-size: 100% 1px, 1px 100%, 100% 1px, 1px 0;
+        }
+        100% {
+            background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+        }
     }
 }
 
@@ -204,4 +246,3 @@
         max-width: 700px;
     }
 }
-

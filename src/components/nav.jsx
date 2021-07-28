@@ -8,7 +8,7 @@ const Nav = () => {
         <nav className={nS.nav}>
             <ThemeToggler>
                 {({ theme, toggleTheme }) => (
-                    <label>
+                    <label className={nS.label}>
                         <input
                             className={nS.toggle}
                             type="checkbox"

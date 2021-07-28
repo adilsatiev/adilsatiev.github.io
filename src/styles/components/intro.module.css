@@ -1,7 +1,19 @@
 .wrapper {
-    /* background: url('../img/binary.png'); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    .wave {
+        position: absolute;
+        bottom: -120px;
+        z-index: -5;
+    }
+    .wave-path {
+        transition: 450ms;
+        fill: var(--recent-bg);
+    }
+    @media (max-width: 426px) {
+        .wave {
+            bottom: 0px;
+        }
+    }
 }
 
 .main {
@@ -16,28 +28,34 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-
     }
     .box {
         display: flex;
         flex-direction: column;
-        max-width: 500px;
-        margin-right: 1rem;
+        max-width: 550px;
+        margin-right: 16px;
         @media (max-width: 760px) {
+            margin-right: 0;
             margin-top: 15px;
             order: 1;
         }
+        @media (max-width: 426px) {
+            max-width: 330px;
+        }
+
     }
     
     .header {
+        font-weight: 500;
         font-size: 44px;
         margin-bottom: 30px;
-        @media (max-width: 760px) {
+        @media (max-width: 321px) {
+            font-size: 38px;
         }
     }
     
     .text {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 35px;
     }
     
@@ -109,4 +127,5 @@
         display: block;
         max-width: 100%;
     }
+
 }
