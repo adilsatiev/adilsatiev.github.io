@@ -25,6 +25,8 @@
         background: var(--recent-post);
         box-shadow: 0px 0px 10px 3px var(--recent-shadow);
         border-radius: 4px;
+        z-index: 10;
+
         @media (max-width: 888px) {
             margin-top: 20px;
         }

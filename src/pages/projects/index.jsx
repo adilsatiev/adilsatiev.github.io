@@ -1,5 +1,8 @@
 import React from "react"
 import Layout from "../../components/layout"
+import { graphql, useStaticQuery, Link } from "gatsby"
+import Head from "../../components/head"
+
 import * as pS from "../../styles/pages/project.module.css"
 
 import workImgOne from "../../img/work-img1.png"
@@ -7,18 +10,36 @@ import workImgTwo from "../../img/work-img2.png"
 import workImgThree from "../../img/work-img3.png"
 import workImgFour from "../../img/work-img4.png"
 import pixel from "../../img/pixel.png"
-import { Link } from "gatsby"
-import Head from "../../components/head"
 
 const ProjectsPage = () => {
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         allMarkdownRemark {
+    //             edges {
+    //                 node {
+    //                     frontmatter {
+    //                         w_title
+    //                         w_date
+    //                         w_topic
+    //                         w_description
+    //                     }
+    //                     fields {
+    //                         slug
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // `)
+
     return (
         <Layout>
             <Head title="Works" />
             <div className={pS.container}>
                 <h2 className={pS.h2}>Works</h2>
-                <div className={pS.using}>
-                    <div className={pS.mainStack}>
-                        <h3 className={pS.h3}>Main Stack That I use</h3>
+                <div className={pS.iconsList}>
+                    <div className={pS.firstStack}>
+                        <h3 className={pS.h3}>Main stack that I use</h3>
                         <ul className={pS.iconsList}>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
@@ -72,8 +93,8 @@ const ProjectsPage = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className={pS.adStack}>
-                        <h3 className={pS.h3}>Also I know how to work with</h3>
+                    <div className={pS.secondStack}>
+                        <h3 className={pS.h3}>Also I'm familiar with</h3>
                         <ul className={pS.iconsList}>
                             <li className={pS.iconWrapper}>
                                 <div className={pS.iconsItem}>
@@ -148,7 +169,34 @@ const ProjectsPage = () => {
                         </ul>
                     </div>
                 </div>
+
                 <ul className={pS.list}>
+                    {/* {data.allMarkdownRemark.edges.map(edge => {
+                        return (
+                            <li className={pS.item}>
+                                <div>
+                                    <img className={pS.img} src={edge.node.frontmatter.image} alt="Work"></img>
+                                </div>
+                                <div className={pS.wrapper}>
+                                    <h3 className={pS.title}>
+                                        <Link className={pS.link} to="/projects/dashboard" to={`/projects/${edge.node.fields.slug}`}>
+                                            {edge.node.frontmatter.title}
+                                        </Link>
+                                    </h3>
+
+
+                                    <div className={pS.key}>
+                                        <span className={pS.data}>{edge.node.frontmatter.date}</span>
+                                        <span className={pS.topic}>{edge.node.frontmatter.topic}</span>
+                                    </div>
+                                    <p className={pS.text}>
+                                        {edge.node.frontmatter.description}
+                                    </p>
+                                </div>
+                            </li>
+                        )
+                    })} */}
+
                     <li className={pS.item}>
                         <div>
                             <img className={pS.img} src={workImgOne} alt="Work"></img>
@@ -177,7 +225,7 @@ const ProjectsPage = () => {
                         </div>
                         <div className={pS.wrapper}>
                             <h3 className={pS.title}>
-                                <Link className={pS.link} to="/">
+                                <Link className={pS.link} to="/projects/nodeapps">
                                     Vibrant Portraits of 2020
                                 </Link>
                             </h3>
@@ -238,7 +286,6 @@ const ProjectsPage = () => {
                     </li>
                 </ul>
             </div>
-
         </Layout>
     )
 }

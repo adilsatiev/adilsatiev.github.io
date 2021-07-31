@@ -27,8 +27,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         @media (max-width: 768px) {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
     }
 
@@ -42,13 +43,14 @@
         font-size: 20px;
     }
     .find {
+        text-align: center;
         font-size: 24px;
         font-weight: 500;
         margin-bottom: 5px;
     }
 
     .gmail {
-        color: var(--text-color);
+        color: var(--primary-color);
         text-decoration: none;
         font-size: 18px;
     }

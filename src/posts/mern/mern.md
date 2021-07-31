@@ -6,8 +6,4 @@ description: "This post about MERN stack! MongoDB, Express, React, Node"
 ---
 
 Lorem ipsum dolor sit amet
-Lorem ipsum dolor sit amet
-Lorem ipsum dolor sit amet
-Lorem ipsum dolor sit amet
-
 ![Cars](./cars.jpg)

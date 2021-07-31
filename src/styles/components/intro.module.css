@@ -1,17 +1,64 @@
 .wrapper {
     position: relative;
+    background: linear-gradient(0deg, var(--intro-dark),var(--intro-light));
+
     .wave {
         position: absolute;
         bottom: -120px;
-        z-index: -5;
+        z-index: var(--wave-zindex);
     }
     .wave-path {
         transition: 450ms;
+        fill: var(--wave-bg);
+    }
+    .topwave {
+        position: absolute;
+        z-index: -5;
+        transform: rotate(180deg);
+        top: 720px;
+    }
+    .topwave-path {
+        transition: 450ms;
         fill: var(--recent-bg);
+    }
+    @media (max-width: 1025px) {
+        .wave {
+            bottom: 0px;
+        }
+        .topwave {
+            top: 830px;
+        }
+    }
+    @media (max-width: 769px) {
+        .wave {
+            bottom: 0px;
+        }
+        .topwave {
+            top: 1130px;
+        }
     }
     @media (max-width: 426px) {
         .wave {
             bottom: 0px;
+        }
+        .topwave {
+            top: 1600px;
+        }
+    }
+    @media (max-width: 376px) {
+        .wave {
+            bottom: 0px;
+        }
+        .topwave {
+            top: 1680px;
+        }
+    }
+    @media (max-width: 321px) {
+        .wave {
+            bottom: 0px;
+        }
+        .topwave {
+            top: 1780px;
         }
     }
 }
@@ -71,6 +118,7 @@
         border-radius: 5px;
         overflow: hidden;
         transition: 100ms;
+        z-index: 10;
         @media (max-width: 760px) {
             align-self: center;
         }

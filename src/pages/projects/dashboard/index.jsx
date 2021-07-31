@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../../../components/layout"
 import * as dS from "./dashboard.module.css"
-import prjImgOne from "../../img/prj-img1.png"
-import prjImgTwo from "../../img/prj-img2.png"
+import prjImgOne from "../../../img/prj-img1.png"
+import prjImgTwo from "../../../img/prj-img2.png"
 
 export default function Dashboard() {
     return (

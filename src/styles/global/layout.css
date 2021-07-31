@@ -2,10 +2,12 @@
    include variables & mixins & etc */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import './reset.css';
 
 * {
-    font-family: "Ubuntu", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 html {
@@ -35,8 +37,11 @@ body {
     --tooltip-color: #636363;
     --recent-shadow: rgba(187, 225, 250, 0.25);
 
+    --wave-bg:       #EDF7FA;
     --intro-light:   hsla(200deg, 100%, 85%, 0);
     --intro-dark:    hsla(200deg, 100%, 85%, 0.1);
+    --wave-zindex: -5;
+
     background-color: var(--bg);
     color: var(--text-color);
     transition: background 450ms;
@@ -48,11 +53,17 @@ body.dark {
     --bg:            #0E141B;
     --recent-bg:     #0E141B;
     --recent-post:   #17212c;
+    --text-white:    #21243d;
     --text-color:    #e6e6e6;
     --primary-color: #AEE8E4;
     --border-color:  #eeeeee;
     --topic-color:   #a3aab3;
+    --data-color:    #e6e6e6;
+    --tooltip-color: #636363;
     --recent-shadow: rgba(255, 255, 255, 0.25);
+
+    --wave-bg:       #0E141B;
+    --wave-zindex: 5;
 }
 
 .layout-container {

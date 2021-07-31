@@ -4,6 +4,7 @@
     margin-bottom: 105px;
     font-size: 20px;
     padding-top: 40px;
+    
     @media (max-width: 376px) {
         padding-right: 0;
         align-self: center;
@@ -12,6 +13,7 @@
     .list {
         list-style: none;
         display: flex;
+
         @media (max-width: 376px) {
             margin-top: 2px;
         }
@@ -24,6 +26,8 @@
         }
     }
     .link {
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
         display: inline-block;
         text-decoration: none;
         transition: 100ms;
