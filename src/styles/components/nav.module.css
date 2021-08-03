@@ -41,6 +41,9 @@
         color: var(--primary-color);
     }
 }
+.label {
+    display: block;
+}
 .toggle {
     --size: 1.5rem;
 

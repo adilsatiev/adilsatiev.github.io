@@ -6,9 +6,13 @@ import "../styles/global/layout.css"
 const Layout = props => {
     return (
         <div className='layout-container'>
+
             <Nav />
+
             <div className='layout-content'>{props.children}</div>
+
             <Footer />
+            
         </div>
     )
 }

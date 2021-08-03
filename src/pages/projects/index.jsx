@@ -1,42 +1,22 @@
 import React from "react"
 import Layout from "../../components/layout"
-import { graphql, useStaticQuery, Link } from "gatsby"
 import Head from "../../components/head"
-
+import ListItem from "./component/listitem"
 import * as pS from "../../styles/pages/project.module.css"
 
-import workImgOne from "../../img/work-img1.png"
-import workImgTwo from "../../img/work-img2.png"
-import workImgThree from "../../img/work-img3.png"
-import workImgFour from "../../img/work-img4.png"
+import workImgOne from "../../img/nodesamples.jpg"
+import workImgTwo from "../../img/csssamples.png"
+import workImgThree from "../../img/work-img4.png"
+
 import pixel from "../../img/pixel.png"
 
 const ProjectsPage = () => {
-    // const data = useStaticQuery(graphql`
-    //     query {
-    //         allMarkdownRemark {
-    //             edges {
-    //                 node {
-    //                     frontmatter {
-    //                         w_title
-    //                         w_date
-    //                         w_topic
-    //                         w_description
-    //                     }
-    //                     fields {
-    //                         slug
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // `)
-
     return (
         <Layout>
             <Head title="Works" />
             <div className={pS.container}>
                 <h2 className={pS.h2}>Works</h2>
+                
                 <div className={pS.iconsList}>
                     <div className={pS.firstStack}>
                         <h3 className={pS.h3}>Main stack that I use</h3>
@@ -171,119 +151,30 @@ const ProjectsPage = () => {
                 </div>
 
                 <ul className={pS.list}>
-                    {/* {data.allMarkdownRemark.edges.map(edge => {
-                        return (
-                            <li className={pS.item}>
-                                <div>
-                                    <img className={pS.img} src={edge.node.frontmatter.image} alt="Work"></img>
-                                </div>
-                                <div className={pS.wrapper}>
-                                    <h3 className={pS.title}>
-                                        <Link className={pS.link} to="/projects/dashboard" to={`/projects/${edge.node.fields.slug}`}>
-                                            {edge.node.frontmatter.title}
-                                        </Link>
-                                    </h3>
-
-
-                                    <div className={pS.key}>
-                                        <span className={pS.data}>{edge.node.frontmatter.date}</span>
-                                        <span className={pS.topic}>{edge.node.frontmatter.topic}</span>
-                                    </div>
-                                    <p className={pS.text}>
-                                        {edge.node.frontmatter.description}
-                                    </p>
-                                </div>
-                            </li>
-                        )
-                    })} */}
-
-                    <li className={pS.item}>
-                        <div>
-                            <img className={pS.img} src={workImgOne} alt="Work"></img>
-                        </div>
-                        <div className={pS.wrapper}>
-                            <h3 className={pS.title}>
-                                <Link className={pS.link} to="/projects/dashboard">
-                                    Designing Dashboards
-                                </Link>
-                            </h3>
-                            <div className={pS.key}>
-                                <span className={pS.data}>2021 Mar</span>
-                                <span className={pS.topic}>Dashboard</span>
-                            </div>
-                            <p className={pS.text}>
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                                veniam c onsequat sunt nostrud amet.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li className={pS.item}>
-                        <div>
-                            <img className={pS.img} src={workImgTwo} alt="Work"></img>
-                        </div>
-                        <div className={pS.wrapper}>
-                            <h3 className={pS.title}>
-                                <Link className={pS.link} to="/projects/nodeapps">
-                                    Vibrant Portraits of 2020
-                                </Link>
-                            </h3>
-                            <div className={pS.key}>
-                                <span className={pS.data}>2021 May</span>
-                                <span className={pS.topic}>Illustration</span>
-                            </div>
-                            <p className={pS.text}>
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                                veniam c onsequat sunt nostrud amet.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li className={pS.item}>
-                        <div>
-                            <img className={pS.img} src={workImgThree} alt="Work"></img>
-                        </div>
-                        <div className={pS.wrapper}>
-                            <h3 className={pS.title}>
-                                <Link className={pS.link} to="/">
-                                    36 Days of Malayalam type
-                                </Link>
-                            </h3>
-                            <div className={pS.key}>
-                                <span className={pS.data}>2021 Jan</span>
-                                <span className={pS.topic}>Typography</span>
-                            </div>
-                            <p className={pS.text}>
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                                veniam c onsequat sunt nostrud amet.
-                            </p>
-                        </div>
-                    </li>
-
-                    <li className={pS.item}>
-                        <div>
-                            <img className={pS.img} src={workImgFour} alt="Work"></img>
-                        </div>
-                        <div className={pS.wrapper}>
-                            <h3 className={pS.title}>
-                                <Link className={pS.link} to="/">
-                                    Components
-                                </Link>
-                            </h3>
-                            <div className={pS.key}>
-                                <span className={pS.data}>2021 Feb</span>
-                                <span className={pS.topic}>Components</span>
-                            </div>
-                            <p className={pS.text}>
-                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                                sint. Velit officia consequat duis enim velit mollit. Exercitation
-                                veniam c onsequat sunt nostrud amet.
-                            </p>
-                        </div>
-                    </li>
+                    <ListItem
+                        title="Task Manager Application"
+                        data="2021 Aug"
+                        topic="Development"
+                        description="Task manager created with node.js & express"
+                        imagesrc={workImgThree}
+                        link="/projects/taskapp"
+                    />
+                    <ListItem
+                        title="Node.js Code Samples"
+                        data="2021 Jul"
+                        topic="Backend"
+                        description="2 small applications powered by NodeJS and npm packages"
+                        imagesrc={workImgOne}
+                        link="/projects/nodeapps"
+                    />
+                    <ListItem
+                        title="CSS Projects"
+                        data="2021 Feb"
+                        topic="CSS"
+                        description="Small CSS projects. Projects avaiable on codepen.io/adilsatiev"
+                        imagesrc={workImgTwo}
+                        link="/projects/cssapps"
+                    />
                 </ul>
             </div>
         </Layout>

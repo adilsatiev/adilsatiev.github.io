@@ -129,59 +129,35 @@
     }
 
     .tooltiptext {
-        background-repeat: no-repeat;
-        background-image: linear-gradient(to right, var(--text-color) 100%, var(--text-color) 100%),
-            linear-gradient(to bottom, var(--text-color) 100%, var(--text-color) 100%),
-            linear-gradient(to right, var(--text-color) 100%, var(--text-color) 100%),
-            linear-gradient(to bottom, var(--text-color) 100%, var(--text-color) 100%);
-        background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
-        border-radius: 2px;
-        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-        animation: bg 0.2s cubic-bezier(0.19, 1, 0.22, 1) 1;
-        animation-play-state: paused;
-
-    }
-
-    .tooltiptext {
-        visibility: hidden;
-        width: 85px;
-        color: var(--text-color);
-        text-align: center;
-        font-size: 14px;
         position: absolute;
-        z-index: 5;
-        top: 60px;
-        right: -17px;
-        transition: border 500ms;
-        @media (max-width: 769px) {
-            background: none;
-            visibility: visible;
-            width: 56px;
-            font-size: 13px;
-            right: -1px;
+        text-align: center;
+        top: 20px;
+        right: -25px;
+        margin-top: 10px;
+        width: 100px;
+        padding: 5px 15px;
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        color: var(--text-color);
+        border-radius: 50px;
+        border: 1px solid var(--primary-color);
+        box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+        pointer-events: none;
+        user-select: none;
+        opacity: 0;
+        transition: all 150ms ease-in-out;
+        @media (max-width: 768px) {
+            margin-top: 35px;
+            opacity: 0.9;
+            border: none;
+            box-shadow: none;
         }
-    }
-    .icon-wrapper:hover .tooltiptext {
-        visibility: visible;
-        animation-play-state: running;
     }
 
-    @keyframes bg {
-        0% {
-            background-size: 0 1px, 1px 0, 0 1px, 1px 0;
-        }
-        25% {
-            background-size: 100% 1px, 1px 0, 0 1px, 1px 0;
-        }
-        50% {
-            background-size: 100% 1px, 1px 100%, 0 1px, 1px 0;
-        }
-        75% {
-            background-size: 100% 1px, 1px 100%, 100% 1px, 1px 0;
-        }
-        100% {
-            background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
-        }
+    .icon-wrapper:hover .tooltiptext {
+        top: 50px;
+        opacity: 0.9;
     }
 }
 
@@ -205,7 +181,9 @@
     }
 
     .img {
-        max-width: 100%;
+        width: 250px;
+        height: 160px;
+        border-radius: 10px;
     }
 
     .wrapper {
@@ -231,9 +209,10 @@
     }
 
     .data {
+        font-size: 14px;
         color: var(--text-white);
         background: var(--data-color);
-        padding: 2px 6px;
+        padding: 4px 8px;
         font-weight: bold;
         border-radius: 16px;
         margin-right: 20px;

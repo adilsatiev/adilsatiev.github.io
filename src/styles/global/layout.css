@@ -20,8 +20,8 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0px; /* remove scrollbar space */
-    background: transparent; /* optional: just make scrollbar invisible */
+    width: 0px; 
+    background: transparent;
 }
 
 body {
@@ -41,14 +41,11 @@ body {
     --intro-light:   hsla(200deg, 100%, 85%, 0);
     --intro-dark:    hsla(200deg, 100%, 85%, 0.1);
     --wave-zindex: -5;
-
+    
     background-color: var(--bg);
     color: var(--text-color);
-    transition: background 450ms;
-
-    /*background: linear-gradient( 0deg,var(--intro-dark),var(--intro-light));*/
+    transition: all 450ms;
 }
-
 body.dark {
     --bg:            #0E141B;
     --recent-bg:     #0E141B;
@@ -56,7 +53,7 @@ body.dark {
     --text-white:    #21243d;
     --text-color:    #e6e6e6;
     --primary-color: #AEE8E4;
-    --border-color:  #eeeeee;
+    --border-color:  #636363;
     --topic-color:   #a3aab3;
     --data-color:    #e6e6e6;
     --tooltip-color: #636363;
@@ -64,6 +61,11 @@ body.dark {
 
     --wave-bg:       #0E141B;
     --wave-zindex: 5;
+}
+
+::selection {
+    background: var(--text-color);
+    color: var(--text-white)
 }
 
 .layout-container {

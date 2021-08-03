@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../../../components/layout"
-import * as dS from "./dashboard.module.css"
+import * as dS from "./taskapp.module.css"
 import prjImgOne from "../../../img/prj-img1.png"
 import prjImgTwo from "../../../img/prj-img2.png"
 
-export default function Dashboard() {
+ const TaskApp = () => {
     return (
         <Layout>
             <div className={dS.container}>
@@ -30,3 +30,5 @@ export default function Dashboard() {
         </Layout>
     )
 }
+
+export default TaskApp
